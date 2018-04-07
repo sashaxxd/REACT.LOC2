@@ -30,7 +30,13 @@ class Api extends React.Component {
             })
     }
     render() {
-        return <div></div>;
+        const PLACES = [
+            { name: "Palo Alto", zip: "94303" },
+            { name: "San Jose", zip: "94088" },
+            { name: "Santa Cruz", zip: "95062" },
+            { name: "Honolulu", zip: "96803" }
+        ];
+        return <div><pre>{JSON.stringify(PLACES, null, 2) }</pre></div>;;
     }
 }
 
